@@ -11,7 +11,7 @@ class umnm_enqueue {
 
 	function wp_enqueue_scripts(){
 
-		wp_register_style('um_new_members', um_new_members_url . 'assets/css/umnm.css' );
+		wp_register_style('um_new_members', um_new_members_url . 'assets/css/umnm.css', array(), um_new_members_version );
 		wp_enqueue_style('um_new_members');
 
 	}

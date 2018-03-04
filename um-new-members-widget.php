@@ -3,8 +3,8 @@
  * Plugin Name: UM New Members widget
  * Plugin URI: https://really-simple-plugins.com/um-new-members/
  * Description: Add-on to Ultimate member to show latest new members in a widget or with shortcode
- * Version: 1.0.1
- * Text Domain: um-new-members
+ * Version: 1.0.7
+ * Text Domain: um-new-members-widget
  * Domain Path: /languages
  * Author: Rogier Lankhorst
  * Author URI: https://really-simple-plugins.com
@@ -38,7 +38,6 @@ define('um_new_members_path', plugin_dir_path(__FILE__ ));
 define('um_new_members_plugin', plugin_basename( __FILE__ ) );
 define('um_new_members_extension', $plugin_data['Name'] );
 define('um_new_members_version', $plugin_data['Version'] );
-define('um_new_members_textdomain', 'um-new-members' );
 define('umnm_plugin_website', 'https://www.really-simple-plugins.com' );
 define( 'umnm_product_name', 'UM New Members Widget' );
 
@@ -50,6 +49,6 @@ $umnm_shortcodes = new umnm_shortcodes;
 $umnm_enqueue    = new umnm_enqueue;
 
 function umnm_plugins_loaded() {
-  load_plugin_textdomain( um_new_members_textdomain, false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+  load_plugin_textdomain( 'um-new-members-widget', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
 add_action( 'plugins_loaded', 'umnm_plugins_loaded', 0 );

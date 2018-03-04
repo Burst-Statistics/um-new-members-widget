@@ -1,17 +1,16 @@
 <?php
 defined('ABSPATH') or die("you do not have acces to this page!");
 
-
 global $ultimatemember;
 global $um_prefix;
 
 $user_fields = array( 'ID');
 
 $query_args = array(
-    'number'      => 5,
+    'number'      => $number_of_members,
     'fields'      => "id",
-    'orderby'      => 'registered',
-    'order'        => 'DESC',
+    'orderby'     => 'registered',
+    'order'       => 'DESC',
 );
 echo '<ul class="umnm-new-members-widget">';
 $wp_user_query = new WP_User_Query($query_args);
@@ -26,7 +25,7 @@ if (!empty($users)){
     <li>
       <div class="umnm-new-members-widget-pic">
       <a title="<?php echo um_user('display_name')?>" href="<?php echo um_user_profile_url()?>" class="um-tip-n">
-        <?php echo get_avatar( $user_id , 40);?>
+        <?php echo um_get_avatar('', $user_id, $avatar_size)?>
       </a>
       </div>
 
