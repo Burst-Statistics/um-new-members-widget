@@ -3,7 +3,7 @@
  * Plugin Name: UM New Members widget
  * Plugin URI: https://really-simple-plugins.com/um-new-members/
  * Description: Add-on to Ultimate member to show latest new members in a widget or with shortcode
- * Version: 1.0.7
+ * Version: 1.0.9
  * Text Domain: um-new-members-widget
  * Domain Path: /languages
  * Author: Rogier Lankhorst
@@ -44,6 +44,7 @@ define( 'umnm_product_name', 'UM New Members Widget' );
 require_once( um_new_members_path . 'core/widgets/new-members-widget.php');
 require_once( um_new_members_path . 'core/class-shortcode.php');
 require_once( um_new_members_path . 'core/class-enqueue.php');
+require_once( um_new_members_path . 'admin/admin.php');
 
 $umnm_shortcodes = new umnm_shortcodes;
 $umnm_enqueue    = new umnm_enqueue;

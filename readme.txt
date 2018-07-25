@@ -4,7 +4,8 @@ Tags: ultimate member, new members, recent members
 Requires at least: 4.2
 License: GPL2
 Tested up to: 4.9
-Stable tag: 1.0.7
+Requires PHP: 5.4
+Stable tag: 1.0.9
 
 Add-on to Ultimate member to show latest new members in a widget or with a shortcode.
 
@@ -34,7 +35,13 @@ To install this plugin:
 * Yes. Copy the template in templates/new-members.php to:
 theme-folder/ultimate-member/templates/um-members-widgets/new-members.php, and edit to your liking. The plugin will pick it up automatically
 
-== Changelog ==
+== Changelog =
+= 1.0.9 =
+* Fix: missing file
+
+= 1.0.8 =
+* Tweak: added option to exclude roles
+
 = 1.0.7 =
 * Tweak: added option to adjust number of members to show
 * Tweak: added option to adjust profile image size

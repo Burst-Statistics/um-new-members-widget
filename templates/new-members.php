@@ -12,6 +12,11 @@ $query_args = array(
     'orderby'     => 'registered',
     'order'       => 'DESC',
 );
+
+if ($exclude_roles){
+    $query_args['role__not_in'] = $exclude_roles;
+}
+
 echo '<ul class="umnm-new-members-widget">';
 $wp_user_query = new WP_User_Query($query_args);
 // Get the results
