@@ -11,6 +11,9 @@ $query_args = array(
     'fields'      => "id",
     'orderby'     => 'registered',
     'order'       => 'DESC',
+    'meta_key'    => 'account_status',
+    'meta_value'  => 'approved',
+    'meta_compare'=> '=',
 );
 
 if ($exclude_roles){
