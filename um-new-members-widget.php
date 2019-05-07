@@ -3,7 +3,7 @@
  * Plugin Name: UM New Members widget
  * Plugin URI: https://really-simple-plugins.com/um-new-members/
  * Description: Add-on to Ultimate member to show latest new members in a widget or with shortcode
- * Version: 1.0.9
+ * Version: 1.0.10
  * Text Domain: um-new-members-widget
  * Domain Path: /languages
  * Author: Rogier Lankhorst

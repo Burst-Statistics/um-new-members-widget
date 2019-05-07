@@ -5,7 +5,7 @@ Requires at least: 4.2
 License: GPL2
 Tested up to: 5.2
 Requires PHP: 5.4
-Stable tag: 1.0.9
+Stable tag: 1.0.10
 
 Add-on to Ultimate member to show latest new members in a widget or with a shortcode.
 
@@ -36,6 +36,9 @@ To install this plugin:
 theme-folder/ultimate-member/templates/um-members-widgets/new-members.php, and edit to your liking. The plugin will pick it up automatically
 
 == Changelog =
+= 1.0.10 =
+* Fix: only show approved members
+
 = 1.0.9 =
 * Fix: missing file
 
