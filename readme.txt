@@ -3,7 +3,7 @@ Contributors: RogierLankhorst
 Tags: ultimate member, new members, recent members
 Requires at least: 4.2
 License: GPL2
-Tested up to: 5.0
+Tested up to: 5.2
 Requires PHP: 5.4
 Stable tag: 1.0.9
 
