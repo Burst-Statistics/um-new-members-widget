@@ -86,4 +86,8 @@ class um_New_Members_Widget extends WP_Widget {
 	}
 
 }
-add_action( 'widgets_init', create_function('', 'return register_widget("um_New_Members_Widget");') );
+
+function umnm_register_widget() {
+	register_widget( 'um_New_Members_Widget');
+}
+add_action('widgets_init',  'umnm_register_widget');

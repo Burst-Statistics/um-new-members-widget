@@ -1,5 +1,5 @@
 <?php
-defined('ABSPATH') or die("you do not have acces to this page!");
+defined('ABSPATH') or die("you do not have access to this page!");
 
 global $ultimatemember;
 global $um_prefix;
@@ -22,12 +22,14 @@ if ($exclude_roles){
 
 echo '<ul class="umnm-new-members-widget">';
 $wp_user_query = new WP_User_Query($query_args);
+
 // Get the results
 $users = $wp_user_query->get_results();
 if (!empty($users)){
   foreach($users as $user_id){
     um_fetch_user($user_id);
     $user = get_user_by("id", $user_id);
+
     $date_format = apply_filters("umnm_date_format", get_option('date_format'));
     ?>
     <li>
